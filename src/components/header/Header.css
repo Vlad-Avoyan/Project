@@ -1,0 +1,30 @@
+.allHead {
+    height: 80px;
+    display: grid;
+    overflow-x: auto;
+    grid-template-areas: "l m";
+}
+.logo {
+    grid-area: "l";
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+.menu {
+    grid-area: "m";
+    padding: 10px 20px;
+}
+.menu img{
+    width: 20px;
+    margin-left: 20px;
+}
+.menu div {
+    font-family: 'Arvo', serif;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu div hr:hover{
+  color: red;
+}

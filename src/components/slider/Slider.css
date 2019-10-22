@@ -1,0 +1,15 @@
+.mainDiv {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 2px solid black;
+}
+.sliderDiv {
+    border: 2px solid black;
+}
+.sliderDiv img {
+    width: 100%;
+    height: 400px;
+}
+.rightButton {
+    border: 2px solid black;
+}
