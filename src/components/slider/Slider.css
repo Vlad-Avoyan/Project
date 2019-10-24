@@ -7,8 +7,10 @@
     border: 2px solid black;
 }
 .sliderDiv img {
-    width: 100%;
+    width: 600px;
     height: 400px;
+    position: relative;
+    animation: mymove 5s
 }
 .rightButton {
     border: 2px solid black;

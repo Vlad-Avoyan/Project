@@ -1,30 +1,32 @@
 .allHead {
-    height: 80px;
+    height: 90px;
     display: grid;
     overflow-x: auto;
     grid-template-areas: "l m";
+    /* background-image: linear-gradient(to right, black , red) */
 }
 .logo {
     grid-area: "l";
+    color: #949494;
     text-align: center;
     padding: 10px 20px;
     font-weight: bold;
     font-family: 'Arvo', serif;
 }
-.menu {
-    grid-area: "m";
-    padding: 10px 20px;
+.logo span {
+    cursor: pointer;
 }
-.menu img{
-    width: 20px;
-    margin-left: 20px;
+.menu {
+    padding: 10px 20px;
 }
 .menu div {
     font-family: 'Arvo', serif;
     float: left;
     margin-left: 20px;
     cursor: pointer;
+    color: #949494;
+    transition: 0.5s;
 }
-.menu div hr:hover{
-  color: red;
+.menu div:hover {
+    color: white;
 }

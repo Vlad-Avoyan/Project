@@ -14,8 +14,6 @@ const Head = () => {
                 <div>Portfolio</div>
                 <div>Blog</div>
                 <div>Contact us</div>
-                <img src={require('./search.png')} />
-                
             </div>
         </div>
     )

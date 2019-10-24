@@ -1,13 +1,54 @@
-.intText {
-    width: 800px;
-    height: 200px;
-    border: 2px solid black;
-    position: relative;
-    z-index: 2;
+.container {
+    width: 1100px;
+    height: 700px;
     margin: 0 auto;
-    margin-top: 100px;
+}
+.musicSet {
+    width: 20%;
+    margin: 0 auto;
+}
+.musicSet strong {
+    font-size: 40px;
+    color: #717171;
+    font-family: 'Raleway', sans-serif;
+}
+.parent1, .parent2, .parent3 {
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-left: 50px;
+}
+.globalStyle {
+    margin-top: 50px;
+}
+.acousticSet {
+    width: 300px;
+    height: 500px;
     text-align: center;
 }
-.intText h1, strong {
-    color: black;
+.acousticSet h1 {
+    color:  #717171;
+    font-family: 'Raleway', sans-serif;
+}
+.smooth {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+}
+.smooth h1 {
+    color:#717171;
+    font-family: 'Raleway', sans-serif;
+}
+.NeilDimond {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+}
+.NeilDimond h1 {
+    color:#717171 ;
+    font-family: 'Raleway', sans-serif;
+}
+.listSet, .listSmooth, .listNeil {
+    text-align: left;
+    color: #717171;
 }
