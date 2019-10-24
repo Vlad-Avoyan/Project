@@ -1,5 +1,5 @@
 import React from 'react'
-import {reviews} from './config'
+import { reviews } from './config'
 import './Slider.css'
 
 class Slider extends React.Component {
@@ -7,38 +7,35 @@ class Slider extends React.Component {
         super()
 
         this.state = {
-            activSlide: 0
+            imageIndex: 0
         }
-        this.nextSlide = this.nextSlide.bind(this)
     }
 
     nextSlide = (e) => {
-        let newIndex = this.state.activSlide
-        if(e.currentTarget.dataset.direction === "next") {
-            if(newIndex < reviews.length -1) {
-                newIndex = this.state.activSlide + 1
+        let newIndex = this.state.imageIndex
+        if (e.currentTarget.dataset.direction === 'next') {
+            if (newIndex < reviews.length) {
+                newIndex = this.state.imageIndex + 1
             }
         } else {
-            if(newIndex > 0) {
-                newIndex = this.state.activSlide - 1
+            if (newIndex > 0) {
+                newIndex = this.state.imageIndex - 1
             }
         }
-        this.setState({ activSlide: newIndex })
+        if (newIndex == reviews.length) {
+            newIndex = 0
+        }
+        this.setState({ imageIndex: newIndex })
     }
 
-    render(){
-        
-        return(
+    render() {
+
+        return (
             <div className="mainDiv">
-                <div className="leftButton">
-                    <button data-direction = "prev" onClick={this.nextSlide.bind(this)}>Prev</button>
-                </div>
                 <div className="sliderDiv">
-                <img src={reviews[this.state.activSlide]} />
-                <h1>{this.state.activSlide}</h1>
-                </div>
-                <div className="rightButton">
-                    <button data-direction = "next" onClick={this.nextSlide.bind(this)}>next</button>
+                    <button className="prev" data-direction="prev" onClick={this.nextSlide.bind(this)}>PREV</button>
+                     <img src={reviews[this.state.imageIndex]} />
+                    <button className="next" data-direction="next" onClick={this.nextSlide.bind(this)}>NEXT</button>
                 </div>
             </div>
         )
