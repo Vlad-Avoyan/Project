@@ -9,7 +9,7 @@
 }
 .musicSet strong {
     font-size: 40px;
-    color: #717171;
+    color: #B8B8B8;
     font-family: 'Raleway', sans-serif;
 }
 .parent1, .parent2, .parent3 {
@@ -27,7 +27,7 @@
     text-align: center;
 }
 .acousticSet h1 {
-    color:  #717171;
+    color:  #B8B8B8;
     font-family: 'Raleway', sans-serif;
 }
 .smooth {
@@ -36,7 +36,7 @@
     text-align: center;
 }
 .smooth h1 {
-    color:#717171;
+    color:#B8B8B8;
     font-family: 'Raleway', sans-serif;
 }
 .NeilDimond {
@@ -45,10 +45,10 @@
     text-align: center;
 }
 .NeilDimond h1 {
-    color:#717171 ;
+    color: #B8B8B8 ;
     font-family: 'Raleway', sans-serif;
 }
 .listSet, .listSmooth, .listNeil {
     text-align: left;
-    color: #717171;
+    color: #B8B8B8;
 }

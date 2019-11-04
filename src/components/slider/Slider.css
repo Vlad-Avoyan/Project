@@ -25,6 +25,7 @@
     opacity: 1;
 }
 .next {
+    transition: all .3s ease-in-out;
     position: absolute;
     top: 50%;
     right: 0.1%;
@@ -48,4 +49,6 @@
 .sliderDiv img {
     width: 945px;
     height: 620px;
+    border-radius: 20px;
+
 }

@@ -25,6 +25,9 @@ class Slider extends React.Component {
         if (newIndex == reviews.length) {
             newIndex = 0
         }
+        else if (newIndex === 0) {
+            newIndex = reviews.length - 1 
+        }
         this.setState({ imageIndex: newIndex })
     }
 

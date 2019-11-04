@@ -1,19 +1,35 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Head = () => {
     return (
         <div className="allHead">
-            <div className="logo">
-                <span>Youre Logo</span>
-            </div>
+                <div className="logo">
+            <Link to='/home'>
+                    <span>Youre Logo</span>
+            </Link>
+
+                </div>
             <div className="menu">
-                <div>Home</div>
-                <div>About</div>
-                <div>Servicing</div>
-                <div>Portfolio</div>
-                <div>Blog</div>
-                <div>Contact us</div>
+                <Link to='/home'>
+                    <div>Home</div>
+                </Link>
+                <Link to='/about'>
+                    <div>About</div>
+                </Link>
+                <Link>
+                    <div>Servicing</div>
+                </Link>
+                <Link>
+                    <div>Portfolio</div>
+                </Link>
+                <Link>
+                    <div>Blog</div>
+                </Link>
+                <Link>
+                    <div>Contact us</div>
+                </Link>
             </div>
         </div>
     )
